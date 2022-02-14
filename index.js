@@ -36,5 +36,7 @@ const server = app.listen(process.env.PORT || 4000, function () {
 app.get('/api/data', services.getData);
 // insert record
 app.post('/api/insert', services.insertData);
+// update the address
 app.patch('/api/update', services.updateData);
+// delete the record based on address
 app.delete('/api/delete', services.deleteData);

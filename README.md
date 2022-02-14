@@ -1,9 +1,10 @@
 # node-mysql-crud
 
-app.get('/api/data', services.getData);
-// insert record
-app.post('/api/insert', services.insertData);
-// update the address
+1. Get the data\
+   app.get('/api/data', services.getData);
+2. Insert record\
+   app.post('/api/insert', services.insertData);
+3. Update the address\
 app.patch('/api/update', services.updateData);
-// delete the record based on address
+4. Delete the record based on address\
 app.delete('/api/delete', services.deleteData);
